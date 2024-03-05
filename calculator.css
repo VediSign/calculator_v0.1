@@ -1,0 +1,176 @@
+*
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html, body
+    {
+    height: 100%;
+    width: 100%;
+    }
+
+.calculator
+    {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: 18%;
+    background-color: #161515;
+    border: .2rem double rgba(247, 244, 244, 0.842);
+    }
+
+input
+    {
+    position: relative;
+    height: auto;
+    width: 98%;
+    padding: .1%;
+    background-color: rgb(236, 236, 236);
+    border: .2rem double rgba(247, 244, 244, 0.842);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: right;
+    }
+
+input::placeholder
+    {
+    color: rgb(15, 7, 7);
+    }
+
+button, .ac, .del
+    {
+    background-color: #161515;
+    height: 10vh;
+    width: 4vw;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    }
+
+button:hover
+    {
+    color: aliceblue;
+    background-color: orangered;
+    }
+
+.operator
+    {
+    color: orangered;
+    }
+
+.equal2
+    {
+    background-color: orangered;
+    }
+
+/* For screens from 598px to 899px */
+@media only screen and (max-width: 899px)
+    {
+.calculator
+        {
+        width: 19%;
+        }
+    
+input
+        {
+        font-size: 1.5rem;
+        }
+        
+button, .ac, .del
+        {
+        height: 8vh;
+        width: 4vw;
+        font-size: .6rem;
+        }
+        }
+
+/* For screens from 449px to 597px */
+@media only screen and (max-width: 597px)
+    {
+.calculator
+        {
+        width: 20%;
+        }
+    
+input
+        {
+        font-size: 1rem;
+        }
+        
+button, .ac, .del
+        {
+        height: 8vh;
+        width: 4vw;
+        font-size: .5rem;
+        }
+        }
+
+/* For screens from 346px to 448px */
+@media only screen and (max-width: 448px)
+    {
+.calculator
+        {
+        width: 18%;
+        }
+    
+input
+        {
+        font-size: 1rem;
+        }
+        
+button, .ac, .del
+        {
+        height: 6vh;
+        width: 3.2vw;
+        font-size: .3rem;
+        }
+        }
+
+/* For screens from 249px to 345px */
+@media only screen and (max-width: 345px)
+    {
+.calculator
+        {
+        width: 20%;
+        }
+    
+input
+        {
+        font-size: 1rem;
+        }
+        
+button, .ac, .del
+        {
+        height: 6vh;
+        width: 3.2vw;
+        font-size: .3rem;
+        }
+        }
+
+/* For screens from 161px to 248px */
+@media only screen and (max-width: 248px)
+    {
+.calculator
+        {
+        width: 24%;
+        }
+    
+input
+        {
+        font-size: 1rem;
+        }
+        
+button, .ac, .del
+        {
+        height: 6vh;
+        width: 3.2vw;
+        font-size: .3rem;
+        }
+        }
+
